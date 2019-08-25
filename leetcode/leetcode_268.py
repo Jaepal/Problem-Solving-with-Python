@@ -1,5 +1,5 @@
 '''
-268. Missing Number
+LeetCode 268. Missing Number
 
 Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.
 '''
@@ -13,8 +13,11 @@ def missingNumber(nums):
     nums.sort()
     if l == nums:
         return l[-1] + 1
-    while(True):
-        ans = l.pop()
-        if ans != nums.pop(0):
+    for i in range(len(l)):
+        if l[i] != nums[i]:
             break
-    return ans
+    return l[i]
+
+def missingNumber2(nums):
+    n = len(nums)
+    return n * (n+1) / 2 - sum(nums)
