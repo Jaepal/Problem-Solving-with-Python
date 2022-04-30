@@ -7,3 +7,4 @@
 | C. Multiples of Length | constructive algorithms, greedy, math, number theory | x        |      |
 | D. Stoned Game         | brute force, games, greedy, implementation           | x (-2)   |      |
 | E. Monster Invaders    | dp, greedy                                           | x        |      |
+
